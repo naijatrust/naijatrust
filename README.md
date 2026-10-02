@@ -1,16 +1,20 @@
-## Hi there 👋
+# NaijaTrust — online starter
 
-<!--
-**naijatrust/naijatrust** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+This is the first public-facing frontend prototype for NaijaTrust.
 
-Here are some ideas to get you started:
+## What works
+- Responsive landing page for phones and computers
+- Search through clearly labelled sample business cards
+- Business suggestion form preview (does not transmit or save data)
+- Informational sections for buyers and business owners
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Important limitations
+- Sample businesses are fictional examples, not verified businesses.
+- No accounts, database, reviews, uploads, or online form submissions are connected yet.
+- Do not add passwords, API keys, private customer records, or sensitive data to this repository.
+
+## Next steps
+1. Upload `index.html` and this README to the `naijatrust` GitHub repository.
+2. Deploy the repository using Vercel.
+3. Create a Supabase project and add a carefully secured database schema.
+4. Connect authentication and business listings only after reviewing row-level security policies.

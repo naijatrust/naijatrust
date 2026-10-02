@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123b2a">
+  <meta name="description" content="NaijaTrust helps people in Nigeria make informed decisions about online sellers and small businesses.">
+  <title>NaijaTrust — Buy with more confidence</title>
+  <style>
+    :root{--green:#123b2a;--green2:#1e6546;--mint:#e9f5ed;--ink:#17231c;--muted:#637168;--line:#dce6df;--paper:#fff;--bg:#f6f8f6;--gold:#f3c969}
+    *{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+    a{color:inherit} .wrap{max-width:1100px;margin:auto;padding:0 20px}
+    header{background:var(--green);color:#fff;padding:16px 0}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    .brand{font-size:1.3rem;font-weight:850;letter-spacing:-.04em}.brand span{color:var(--gold)}
+    .nav a{font-size:.95rem;text-decoration:none;opacity:.95;margin-left:16px}
+    .hero{padding:58px 0 44px;background:linear-gradient(135deg,#123b2a,#1f6546);color:#fff}
+    .hero-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:30px;align-items:center}
+    .eyebrow{font-size:.8rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:#c9e9d3}
+    h1{font-size:clamp(2.2rem,5vw,4rem);line-height:1.06;letter-spacing:-.05em;margin:12px 0 18px;max-width:700px}
+    .hero p{max-width:650px;color:#e2f0e6;font-size:1.08rem}
+    .search{display:flex;gap:8px;margin-top:24px;max-width:650px}
+    input,select,textarea{width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:10px;font:inherit;background:#fff;color:var(--ink)}
+    button{border:0;border-radius:10px;padding:12px 16px;font:inherit;font-weight:750;cursor:pointer}
+    .primary{background:var(--gold);color:#173322;white-space:nowrap}.secondary{background:var(--green);color:white}.outline{background:#fff;border:1px solid var(--line);color:var(--green)}
+    .hero-card{background:#fff;color:var(--ink);border-radius:18px;padding:24px;box-shadow:0 18px 45px #09241533}
+    .hero-card .check{display:flex;gap:10px;margin:12px 0;color:#34463a}.check b{color:var(--green2)}
+    main{padding:38px 0 60px}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:18px}
+    h2{font-size:1.7rem;letter-spacing:-.03em;margin:0 0 6px}.muted{color:var(--muted)}
+    .notice{background:#fff8e6;border:1px solid #f2dfab;border-radius:12px;padding:14px 16px;color:#59481f;margin:22px 0}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .card{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:20px}
+    .card h3{margin:8px 0 4px}.pill{display:inline-flex;border-radius:999px;background:var(--mint);color:var(--green2);font-size:.78rem;font-weight:800;padding:5px 9px}
+    .empty{padding:30px;text-align:center;background:white;border:1px dashed #c8d8cd;border-radius:14px;color:var(--muted)}
+    .two{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:34px}
+    .form-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px}
+    label{display:block;font-size:.9rem;font-weight:700;margin:13px 0 6px}
+    .form-card button{margin-top:16px;width:100%}
+    footer{background:#102d20;color:#dbe9df;padding:28px 0;font-size:.9rem}
+    .small{font-size:.82rem;color:var(--muted)} .hero .small{color:#d4e8da}
+    @media(max-width:760px){.hero-grid,.two{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.hero{padding-top:42px}.search{flex-direction:column}.nav a{margin-left:0;margin-right:12px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <div class="brand">Naija<span>Trust</span></div>
+    <nav aria-label="Main navigation">
+      <a href="#businesses">Find businesses</a>
+      <a href="#how">How it works</a>
+      <a href="#suggest">Suggest a business</a>
+    </nav>
+  </div>
+</header>
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="eyebrow">A little more confidence before you pay</div>
+      <h1>Make informed choices. Support honest businesses.</h1>
+      <p>NaijaTrust is being built to help people in Nigeria learn about businesses, keep order records and share fair, evidence-based experiences.</p>
+      <form class="search" id="searchForm">
+        <input id="searchInput" aria-label="Search businesses" placeholder="Search business name or service…" />
+        <button class="primary" type="submit">Search businesses</button>
+      </form>
+      <p class="small">No business listed? You can suggest one below. An empty result does not mean a business is untrustworthy.</p>
+    </div>
+    <div class="hero-card">
+      <h2>Trust starts with clear information</h2>
+      <div class="check"><b>✓</b><span>Look for business details and customer experiences</span></div>
+      <div class="check"><b>✓</b><span>Keep order details and agreements organised</span></div>
+      <div class="check"><b>✓</b><span>Give businesses a fair chance to respond</span></div>
+      <div class="notice" style="margin-bottom:0">Early preview: listings below are examples, not verified businesses.</div>
+    </div>
+  </div>
+</section>
+<main class="wrap">
+  <section id="businesses">
+    <div class="section-head">
+      <div><h2>Explore businesses</h2><div class="muted">Search the sample directory as we prepare the shared online database.</div></div>
+      <span class="pill">Preview version</span>
+    </div>
+    <div id="businessList" class="cards"></div>
+    <div id="emptyState" class="empty" hidden>No sample businesses match that search. Try another name or service.</div>
+  </section>
+  <section id="how" class="two">
+    <div class="card">
+      <h2>For buyers</h2>
+      <p class="muted">Use available information to make your own decision. Keep your order agreement, payment reference and delivery promises together.</p>
+      <ul><li>Compare business details</li><li>Record order information</li><li>Prepare a clear complaint summary if needed</li></ul>
+    </div>
+    <div class="card">
+      <h2>For business owners</h2>
+      <p class="muted">Build a clear public profile and respond respectfully to customer feedback.</p>
+      <ul><li>Share accurate business information</li><li>Invite genuine customer feedback</li><li>Resolve issues transparently</li></ul>
+    </div>
+  </section>
+  <section id="suggest" class="two">
+    <div>
+      <h2>Suggest a business</h2>
+      <p class="muted">Help us learn which businesses people want to find. This demo form does not send information to a server yet.</p>
+      <div class="notice">Please use fictional test details for now. Do not submit private customer information, payment details or accusations about a real business.</div>
+    </div>
+    <form class="form-card" id="suggestForm">
+      <label for="businessName">Business name</label>
+      <input id="businessName" required maxlength="100" placeholder="e.g. Example Fashion Store">
+      <label for="category">Business category</label>
+      <select id="category" required><option value="">Choose category</option><option>Fashion</option><option>Electronics</option><option>Food</option><option>Beauty and personal care</option><option>Home services</option><option>Other</option></select>
+      <label for="city">City or state (optional)</label>
+      <input id="city" maxlength="80" placeholder="e.g. Ibadan, Oyo">
+      <label for="reason">Why should it be listed? (optional)</label>
+      <textarea id="reason" rows="3" maxlength="500" placeholder="Briefly explain"></textarea>
+      <button class="secondary" type="submit">Preview suggestion</button>
+      <p class="small" id="formMessage" role="status"></p>
+    </form>
+  </section>
+</main>
+<footer><div class="wrap"><strong>NaijaTrust</strong><p>Helping buyers and businesses build trust through clear information and fair processes.</p><span>Prototype only — listings and suggestions are not sent to a server yet.</span></div></footer>
+<script>
+  const sampleBusinesses = [
+    {name:"Example Fashion Store",category:"Fashion",location:"Lagos, Nigeria",description:"Sample listing to demonstrate how a business card could appear."},
+    {name:"Example Phone Accessories",category:"Electronics",location:"Abuja, Nigeria",description:"Sample listing. No real customer reviews or verification are attached."},
+    {name:"Example Home Services",category:"Home services",location:"Ibadan, Nigeria",description:"Sample listing showing a service-based business profile."}
+  ];
+  const list = document.getElementById("businessList");
+  const empty = document.getElementById("emptyState");
+  function render(query=""){
+    const found = sampleBusinesses.filter(b => (b.name+" "+b.category+" "+b.location).toLowerCase().includes(query.toLowerCase()));
+    list.innerHTML = found.map(b => `<article class="card"><span class="pill">${escapeHtml(b.category)}</span><h3>${escapeHtml(b.name)}</h3><div class="muted">${escapeHtml(b.location)}</div><p>${escapeHtml(b.description)}</p><div class="small">Example only · Not verified</div></article>`).join("");
+    empty.hidden = found.length > 0;
+  }
+  function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+  document.getElementById("searchForm").addEventListener("submit",e=>{e.preventDefault();render(document.getElementById("searchInput").value.trim());document.getElementById("businesses").scrollIntoView({behavior:"smooth"});});
+  document.getElementById("suggestForm").addEventListener("submit",e=>{
+    e.preventDefault();
+    const name=document.getElementById("businessName").value.trim();
+    const category=document.getElementById("category").value;
+    document.getElementById("formMessage").textContent=`Preview only: “${name}” would be submitted under ${category}. Nothing has been uploaded or saved online.`;
+  });
+  render();
+</script>
+</body>
+</html>
